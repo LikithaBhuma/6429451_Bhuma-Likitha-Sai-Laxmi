@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debug Registration</title>
+  <style>
+    .message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .success {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Event Registration (Debug Mode)</h2>
+
+  <form id="registerForm">
+    <label for="name">Name:</label><br>
+    <input type="text" name="name" id="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" required><br><br>
+
+    <label for="event">Event:</label><br>
+    <select name="event" id="event" required>
+      <option value="">Select</option>
+      <option value="Music Night">Music Night</option>
+      <option value="Tech Talk">Tech Talk</option>
+      <option value="Health Camp">Health Camp</option>
+    </select><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <div class="message" id="responseMessage"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

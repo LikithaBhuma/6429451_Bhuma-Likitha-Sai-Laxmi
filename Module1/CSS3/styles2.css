@@ -1,0 +1,55 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*  Body Styling with Background Image and Fallback Color */
+body {
+  background-color: #e0f7fa; /* Fallback light blue color */
+  background-image: url('city-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+
+/*  Header Styling with HEX Color */
+#mainHeader {
+  background-color: #2E8B57; /* HEX: Sea green */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+
+
+/*  Event Cards */
+.eventCard {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Section Headers with Gradient */
+h2 {
+  background: linear-gradient(to right, #4CAF50, #81C784); /* Green gradient */
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+/* Grouped Text Styling (h3 and p) */
+h3, p {
+  color: rgba(0, 0, 0, 0.75); /* Text color using RGBA */
+  line-height:1.6;
+}

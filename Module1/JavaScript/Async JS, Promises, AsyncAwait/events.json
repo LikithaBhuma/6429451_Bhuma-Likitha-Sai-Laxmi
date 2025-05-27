@@ -1,0 +1,6 @@
+[
+  { "name": "Workshop on Baking", "date": "2025-06-05", "seats": 15, "category": "Cooking" },
+  { "name": "Jazz Night", "date": "2025-06-15", "seats": 50, "category": "Music" },
+  { "name": "Rock Concert", "date": "2025-07-01", "seats": 200, "category": "Music" },
+  { "name": "Gardening 101", "date": "2025-06-20", "seats": 25, "category": "Environment" }
+]

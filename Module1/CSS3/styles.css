@@ -1,0 +1,62 @@
+/* -------------------------------------------------------
+   Header styles
+   ------------------------------------------------------- */
+
+/* Style for page header */
+header {
+  background-color: #4CAF50;  /* Green background */
+  padding: 15px;              /* Space inside the header */
+  text-align: center;         /* Centered text */
+}
+
+
+/* -------------------------------------------------------
+   Navigation styles
+   ------------------------------------------------------- */
+
+/* Remove bullet points and padding from nav list */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Arrange nav items horizontally with spacing */
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Style for nav links */
+nav ul li a {
+  text-decoration: none;   /* Remove underline */
+  color: white;            /* White text */
+  font-weight: bold;       /* Bold font */
+}
+
+
+/* -------------------------------------------------------
+   Main content section
+   ------------------------------------------------------- */
+
+/* Add padding around main content */
+main {
+  padding: 20px;
+}
+
+/* Style for section headings */
+h2 {
+  color: #333;  /* Dark grey text */
+}
+
+
+/* -------------------------------------------------------
+   Footer styles
+   ------------------------------------------------------- */
+
+/* Style for footer area */
+footer {
+  background-color: #333;  /* Dark background */
+  color: white;            /* White text */
+  text-align: center;      /* Centered text */
+  padding: 10px;           /* Inner spacing */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 12px;
+      margin: 8px;
+      border-radius: 8px;
+      width: 300px;
+    }
+    .controls {
+      margin-bottom: 16px;
+    }
+    input, select {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Community Events</h1>
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search by name..." />
+    <select id="categoryFilter">
+      <option value="All">All Categories</option>
+      <option value="Music">Music</option>
+      <option value="Cooking">Cooking</option>
+      <option value="Environment">Environment</option>
+    </select>
+  </div>
+  <div id="eventContainer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

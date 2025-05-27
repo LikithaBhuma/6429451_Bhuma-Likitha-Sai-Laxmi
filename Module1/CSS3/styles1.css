@@ -1,0 +1,47 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*Banner Section*/
+/* Style for banner header using ID selector */
+#mainHeader {
+  background-color: #2E8B57; /* Sea green */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+
+
+/* Headings*/
+/* Style all <h2> elements using element selector */
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+/* Event Cards */
+/* Style for event container using class selector */
+.eventCard {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Grouped Elements */
+/* Style for both <h3> and <p> elements */
+h3, p {
+  font-family: 'Segoe UI', sans-serif;
+  color: #444;
+  line-height: 1.6;
+}

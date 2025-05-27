@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model and Layout Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    /* Event card with box model styling */
+    .eventCard {
+      background-color: #fff;
+      border: 2px solid #4CAF50;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .eventCard h2 {
+      margin-top: 0;
+      color: #2E8B57;
+    }
+
+    /* Form field with outline for highlighting */
+    input:focus {
+      outline: 2px dashed #4CAF50;
+      outline-offset: 4px;
+    }
+
+    /* Visibility comparison */
+    .hidden-box {
+      background-color: #ffeb3b;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .visibility-hidden {
+      visibility: hidden;
+    }
+
+    .display-none {
+      display: none;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="eventCard">
+    <h2>Community Yoga</h2>
+    <p>Join us every Saturday morning for a refreshing yoga session at the park.</p>
+  </div>
+
+  <div class="eventCard">
+    <h2>Art & Craft Fair</h2>
+    <p>Explore local art, handmade crafts, and support small businesses.</p>
+  </div>
+
+  <hr>
+
+  <h3>Register for an Event</h3>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" placeholder="Your Name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="Your Email"><br><br>
+  </form>
+
+  <hr>
+
+  <h3>Visibility vs Display</h3>
+  <div class="hidden-box visibility-hidden">This box uses <strong>visibility: hidden</strong></div>
+  <div class="hidden-box display-none">This box uses <strong>display: none</strong></div>
+
+  <p class="note">
+    Note: The yellow box with <code>visibility: hidden</code> takes up space but is invisible.<br>
+    The one with <code>display: none</code> is removed from the layout flow entirely.
+  </p>
+
+</body>
+</html>

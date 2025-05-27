@@ -1,0 +1,25 @@
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   └── bootstrap.rtl.min.css
+├── js/
+│   ├── bootstrap.bundle.js
+│   ├── bootstrap.bundle.min.js
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── icons/ (not included by default — comes separately)
+ Folder Purposes:
+--css/:
+Contains compiled CSS files.
+bootstrap.min.css is the minified version for production.
+bootstrap.rtl.min.css supports right-to-left languages.
+
+--js/:
+Contains JavaScript plugins.
+bootstrap.bundle.min.js includes Popper (needed for dropdowns, tooltips).
+bootstrap.min.js requires Popper to be included separately.
+
+--icons/ (Optional):
+Comes from Bootstrap Icons.
+Separate package (bootstrap-icons) that contains .svg icons for web use.

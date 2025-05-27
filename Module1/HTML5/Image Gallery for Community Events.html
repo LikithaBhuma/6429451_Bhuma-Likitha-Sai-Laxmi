@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+  <style>
+    /* Welcome Banner Styling */
+    #welcomeBanner {
+      background-color: blue; 
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    /* Highlight Class */
+    .highlight {
+      background-color: pink;
+      padding: 2px 5px;
+    }
+
+    /* Event Image Styling */
+    .event-img {
+      width: 100%;
+      max-width: 200px;
+      border: 3px solid #555;
+      border-radius: 8px;
+    }
+
+    /* Table Centering and Formatting */
+    table {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    figcaption {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 10px;
+      background-color: purple;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color:white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="help.html" target="_blank">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Banner -->
+  <div id="welcomeBanner">
+    Welcome back, <span class="highlight">Community Member</span>!
+    <span style="color: red; font-weight: bold;">Special offer: Free entry to this weekend’s event!</span>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h1 class="highlight">Welcome to the Local Community Event Portal</h1>
+      <p>Stay informed and connected with local events and services.</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <p>Check out what's happening in your community.</p>
+    </section>
+
+    <!-- Events Gallery Section -->
+    <section id="gallery">
+      <h2>Community Event Gallery</h2>
+      <table>
+        <tr>
+          <td>
+            <figure>
+              <img src="images/event1.jpg" alt="Music Night" title="Music Night 2024" class="event-img">
+              <figcaption>Music Night</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/event2.jpg" alt="Food Fest" title="Food Festival 2024" class="event-img">
+              <figcaption>Food Festival</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/event3.jpg" alt="Art Show" title="Local Art Show" class="event-img">
+              <figcaption>Art Exhibition</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="images/event4.jpg" alt="Tree Plantation" title="Green Initiative" class="event-img">
+              <figcaption>Tree Plantation Drive</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/event5.jpg" alt="Health Camp" title="Free Health Camp" class="event-img">
+              <figcaption>Health Camp</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/event6.jpg" alt="Book Fair" title="Community Book Fair" class="event-img">
+              <figcaption>Book Fair</figcaption>
+            </figure>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions? Reach out to us via email or phone.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Local City Council</p>
+  </footer>
+
+</body>
+</html>

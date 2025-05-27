@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Yoga Session",
+    "date": "2025-06-15",
+    "seats": 25,
+    "category": "Health"
+  },
+  {
+    "name": "Rock Concert",
+    "date": "2025-06-20",
+    "seats": 50,
+    "category": "Music"
+  },
+  {
+    "name": "JavaScript Workshop",
+    "date": "2025-06-22",
+    "seats": 40,
+    "category": "Education"
+  }
+]

@@ -1,0 +1,20 @@
+mkdir bootstrap-sass-project
+cd bootstrap-sass-project
+npm init -y
+npm install bootstrap
+npm install sass --save-dev
+create project structure:
+bootstrap-sass-project/
+├── scss/
+│   └── custom.scss
+├── css/
+│   └── (output will be placed here)
+├── index.html
+custom.scss:
+// custom.scss
+// Override variables before importing Bootstrap
+$primary: #8e44ad;
+$border-radius: 1rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+npx sass scss/custom.scss css/custom.css
