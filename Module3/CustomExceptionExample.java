@@ -1,13 +1,10 @@
 package Projects;
 import java.util.Scanner;
-
-//Define custom exception class
 class InvalidAgeException extends Exception {
  public InvalidAgeException(String message) {
      super(message);
  }
 }
-
 public class CustomExceptionExample {
  // Method to validate age and throw exception if less than 18
  public static void checkAge(int age) throws InvalidAgeException {
@@ -17,20 +14,15 @@ public class CustomExceptionExample {
          System.out.println("Age is valid. Access granted.");
      }
  }
-
  public static void main(String[] args) {
-     Scanner scanner = new Scanner(System.in);
-
-     // Prompt user for age
+     Scanner sc = new Scanner(System.in);
      System.out.print("Enter your age: ");
-     int age = scanner.nextInt();
-
+     int age = sc.nextInt();
      try {
-         checkAge(age); // Attempt age validation
+         checkAge(age); 
      } catch (InvalidAgeException e) {
-         System.out.println(e.getMessage()); // Handle custom exception
+         System.out.println(e.getMessage());
      }
-
-     scanner.close();
+     sc.close();
  }
 }
