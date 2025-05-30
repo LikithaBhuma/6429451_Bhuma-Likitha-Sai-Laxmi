@@ -1,13 +1,9 @@
 package Projects;
 import java.util.List;
 import java.util.stream.Collectors;
-
-// Define the record
 record Person(String name, int age) {}
-
 public class RecordExample {
     public static void main(String[] args) {
-        // Create a list of Person instances
         List<Person> people = List.of(
             new Person("Krishna", 25),
             new Person("Shiva", 30),
@@ -15,13 +11,9 @@ public class RecordExample {
             new Person("Durga", 35),
             new Person("Lakshmi", 17)
         );
-
-        // Filter people based on age (e.g., age >= 18)
         List<Person> adults = people.stream()
                                     .filter(p -> p.age() >= 18)
                                     .collect(Collectors.toList());
-
-        // Display the filtered list
         System.out.println("Adults:");
         adults.forEach(System.out::println);
     }
