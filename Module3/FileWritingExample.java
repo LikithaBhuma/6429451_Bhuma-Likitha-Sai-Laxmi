@@ -2,16 +2,11 @@ package Projects;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class FileWritingExample {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Prompt user for input
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter text to write to the file: ");
-        String userInput = scanner.nextLine();
-
-        // Write to file
+        String userInput = sc.nextLine();
         try {
             FileWriter writer = new FileWriter("output.txt");
             writer.write(userInput);
@@ -20,8 +15,7 @@ public class FileWritingExample {
         } catch (IOException e) {
             System.out.println("Error writing to file: " + e.getMessage());
         }
-
-        scanner.close();
+        sc.close();
     }
 }
 
