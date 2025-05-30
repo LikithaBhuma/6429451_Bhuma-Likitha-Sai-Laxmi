@@ -1,7 +1,7 @@
 package Projects;
 public class PatternMatchingExample {
     public static void checkObjectType(Object obj) {
-        // Enhanced switch with pattern matching
+        // Enhanced switch case
         switch (obj) {
             case Integer i -> System.out.println("It's an Integer: " + i);
             case String s -> System.out.println("It's a String: " + s);
@@ -10,7 +10,6 @@ public class PatternMatchingExample {
             default -> System.out.println("Unknown type: " + obj.getClass().getSimpleName());
         }
     }
-
     public static void main(String[] args) {
         checkObjectType(42);
         checkObjectType("Hello, Java!");
