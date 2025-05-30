@@ -1,7 +1,6 @@
 package Projects;
 import java.util.Scanner;
 public class RecursiveFibonacci {
-    // Recursive method to calculate nth Fibonacci number
     public static int fibonacci(int n) {
         if (n <= 0) {
             throw new IllegalArgumentException("Input must be a positive integer.");
@@ -10,20 +9,15 @@ public class RecursiveFibonacci {
         }
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Prompt user for input
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter a positive integer: ");
-        int n = scanner.nextInt();
-
+        int n = sc.nextInt();
         if (n <= 0) {
             System.out.println("Error: Please enter a positive integer.");
         } else {
             System.out.println("The " + n + "th Fibonacci number is: " + fibonacci(n));
         }
-
-        scanner.close();
+        sc.close();
     }
 }
